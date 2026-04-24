@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi | Smart-Eater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --bg-soft: #fff5ee;
+            --text-dark: #37474f;
+            --nav-dark: #1a1a1a;
+            --accent-blue: #3498db;
+        }
+
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            background-color: var(--bg-soft);
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: var(--nav-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links li { margin: 5px 15px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-blue);
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: var(--primary-red); margin-bottom: 20px; }
+
+        .btn-play {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: var(--accent-blue);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-play:hover {
+            transform: scale(1.05);
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .container { margin: 30px auto; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="dampak.html">Dampak</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html" class="active">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h1>Game: Benar atau Salah</h1>
+        <p>Uji pengetahuanmu tentang gizi dan cara mencegah obesitas melalui tantangan seru ini!</p>
+        <p>Pastikan koneksi internetmu lancar sebelum memulai.</p>
+        
+        <a href="https://kahoot.it/challenge/05572130?challenge-id=e992d531-104c-43b8-81ff-fa4a20bcdd33_1777057507835" class="btn-play" target="_blank">
+            Mainkan Sekarang!
+        </a>
+    </div>
+</div>
+
+<footer style="text-align: center; margin-top: 50px; font-size: 13px; color: #777; padding-bottom: 20px;">
+    &copy; 2026 Smart-Eater | Jaga Pola Makan, Jaga Masa Depan
+</footer>
+
+</body>
+</html>

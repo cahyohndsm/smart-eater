@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Eater | Edukasi Gizi Berbasis Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-peach: #ffb399;
+            --nav-dark: #1a1a1a;
+            --text-dark: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-peach);
+            color: var(--text-dark);
+        }
+
+        /* Navigasi Utama */
+        nav {
+            background-color: var(--nav-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links li { margin: 5px 15px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 13px;
+            font-weight: 400;
+            transition: 0.3s;
+            text-transform: capitalize;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Container Utama */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Grid Menu */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .menu-item { text-align: center; }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card img {
+            max-width: 65%;
+            max-height: 65%;
+            object-fit: contain;
+        }
+
+        .menu-title {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #2c3e50;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 740px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid, .bottom-grid { grid-template-columns: 1fr; }
+            .bottom-grid { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="dampak.html">Dampak</a></li>
+        <li><a href="pencegahan.html">Pencegahan</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    
+    <div class="menu-grid">
+        <div class="menu-item" onclick="location.href='materi.html'">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2972/2972531.png" alt="Materi Gizi">
+            </div>
+            <div class="menu-title">Materi</div>
+        </div>
+        <div class="menu-item" onclick="location.href='penyebab.html'">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Penyebab Obesitas">
+            </div>
+            <div class="menu-title">Penyebab</div>
+        </div>
+        <div class="menu-item" onclick="location.href='dampak.html'">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063198.png" alt="Dampak Kesehatan">
+            </div>
+            <div class="menu-title">Dampak</div>
+        </div>
+    </div>
+
+    <div class="bottom-grid">
+        <div class="menu-item" onclick="location.href='modul.html'">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Modul Digital">
+            </div>
+            <div class="menu-title">Modul Digital</div>
+        </div>
+        <div class="menu-item" onclick="location.href='evaluasi.html'">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2522/2522204.png" alt="Kuis Interaktif">
+            </div>
+            <div class="menu-title">Kuis dan Game</div>
+        </div>
+    </div>
+
+</div>
+
+<footer style="text-align: center; padding: 20px; color: #555; font-size: 12px;">
+    &copy; 2026 Smart-Eater | Pengaruh Edukasi Gizi Berbasis Web
+</footer>
+
+</body>
+</html>

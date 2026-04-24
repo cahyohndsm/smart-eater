@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dampak Konsumsi Lemak Berlebih | Smart-Eater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --bg-soft: #fff5ee;
+            --text-dark: #37474f;
+            --nav-dark: #1a1a1a;
+        }
+
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            background-color: var(--bg-soft);
+            color: var(--text-dark);
+        }
+
+        /* Navigasi Utama */
+        nav {
+            background-color: var(--nav-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 30px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links li { margin: 5px 15px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 13px;
+            font-weight: 400;
+            transition: 0.3s;
+            text-transform: capitalize;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        .materi-box { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+
+        h1 { 
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-red); 
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .dampak-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .dampak-item:last-child { border: none; }
+        .dampak-text { flex: 2; }
+        .dampak-img { flex: 1; }
+
+        .dampak-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 { color: #b71c1c; font-size: 22px; margin-top: 0; }
+
+        /* Focus Box Obesitas */
+        .focus-box {
+            background: #ffebee;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 20px;
+            border-left: 8px solid var(--primary-red);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: var(--primary-red);
+            font-size: 13px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .dampak-item { flex-direction: column; text-align: center; }
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="dampak.html" class="active">Dampak</a></li>
+        <li><a href="pencegahan.html">Pencegahan</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="materi-box">
+        <h1>Bahaya Tersembunyi Jajanan Tinggi Lemak</h1>
+
+        <div class="dampak-item">
+            <div class="dampak-text">
+                <h2>1. Masalah Kulit & Jerawat</h2>
+                <p><strong>Pemicu:</strong> Gorengan (bakwan, tahu isi, mendoan).</p>
+                <p>Lemak jenuh yang tinggi dari minyak goreng yang digunakan berulang kali dapat merangsang peradangan. Hal ini menyebabkan kelenjar minyak pada wajah memproduksi sebum berlebih, yang berakhir pada munculnya <strong>jerawat meradang</strong> yang sulit sembuh.</p>
+            </div>
+            <div class="dampak-img">
+                <img src="https://statik.tempo.co/data/2022/12/23/id_1167878/1167878_720.jpg" alt="Gorengan Khas Indonesia">
+            </div>
+        </div>
+
+        <div class="dampak-item">
+            <div class="dampak-img">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Fast Food Burger">
+            </div>
+            <div class="dampak-text">
+                <h2>2. Kolesterol & Tekanan Darah</h2>
+                <p><strong>Pemicu:</strong> Burger, kentang goreng, ayam krispi.</p>
+                <p>Lemak trans dalam makanan cepat saji menyebabkan penumpukan plak di dinding pembuluh darah. Kebiasaan ini dapat memicu <strong>hipertensi dini</strong> karena jantung harus bekerja ekstra keras untuk memompa darah.</p>
+            </div>
+        </div>
+
+        <div class="dampak-item">
+            <div class="dampak-text">
+                <h2>3. Gangguan Pencernaan (GERD)</h2>
+                <p><strong>Pemicu:</strong> Gorengan, santan, dan makanan ultra-proses.</p>
+                <p>Kelebihan asupan lemak dapat memperlambat proses pengosongan lambung. Hal ini menyebabkan tekanan pada sfingter esofagus, sehingga asam lambung naik ke kerongkongan dan menimbulkan sensasi terbakar di dada (<em>heartburn</em>).</p>
+            </div>
+            <div class="dampak-img">
+                <img src="https://dietpartner.id/wp-content/uploads/2025/02/obesitas-gerd.png" alt="GERD dan Obesitas">
+            </div>
+        </div>
+
+        <div class="dampak-item">
+            <div class="dampak-img">
+                <img src="https://soundhealthhq.com/wp-content/uploads/2023/07/70B54003-50C5-4D47-A2D1-883DC4F044DD-1920x1081.jpeg" alt="Fatty Liver">
+            </div>
+            <div class="dampak-text">
+                <h2>4. Risiko Perlemakan Hati (Fatty Liver)</h2>
+                <p><strong>Pemicu:</strong> Konsumsi lemak jenuh dan gula berlebih.</p>
+                <p>Hati memiliki kapasitas terbatas dalam mengolah lemak. Jika asupan lemak terlalu tinggi, hati akan menyimpan kelebihan tersebut sebagai sel lemak, yang dalam jangka panjang menyebabkan peradangan dan kerusakan fungsi hati.</p>
+            </div>
+        </div>
+
+        <div class="dampak-item">
+            <div class="dampak-text">
+                <h2>5. Penurunan Fungsi Kognitif (Brain Fog)</h2>
+                <p><strong>Pemicu:</strong> Diet tinggi lemak trans dan makanan cepat saji.</p>
+                <p>Asupan lemak jahat yang berlebihan dapat memicu peradangan sistemik yang berdampak pada otak. Ini sering menyebabkan <em>brain fog</em>, yaitu kondisi di mana seseorang merasa sulit berkonsentrasi, pikun jangka pendek, dan mental yang mudah lelah.</p>
+            </div>
+            <div class="dampak-img">
+                <img src="https://sanfrancisconeuropsychology.org/wp-content/uploads/2020/08/SFN-website-brain-fog-scaled.jpg" alt="Brain Fog">
+            </div>
+        </div>
+
+        <div class="focus-box">
+            <h2 style="text-align: center; color: #d32f2f; margin-bottom: 25px;">Fokus Utama: Dampak Obesitas</h2>
+            
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://bobohosnack.id/wp-content/uploads/2025/02/Untitled-presentation-1.webp" alt="Dampak Obesitas" style="border-radius: 12px; width: 100%; max-width: 500px; height: 280px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            </div>
+
+            <p style="text-align: center; font-weight: 600;">Obesitas adalah kondisi penumpukan lemak yang mengganggu metabolisme. Dampaknya bersifat sistemik:</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 25px;">
+                <div style="background: rgba(255,255,255,0.6); padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #b71c1c; margin-top: 0;">1. Kerusakan Fisik</h3>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li><strong>Diabetes Tipe 2:</strong> Resistensi insulin kronis.</li>
+                        <li><strong>Penyakit Jantung:</strong> Hipertensi & plak arteri.</li>
+                        <li><strong>Masalah Sendi:</strong> Nyeri lutut & tulang belakang.</li>
+                    </ul>
+                </div>
+                <div style="background: rgba(255,255,255,0.6); padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #b71c1c; margin-top: 0;">2. Beban Mental</h3>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li><strong>Krisis Percaya Diri:</strong> Gangguan citra tubuh.</li>
+                        <li><strong>Risiko Depresi:</strong> Stres akibat stigma sosial.</li>
+                        <li><strong>Bullying:</strong> Rentan dikucilkan dari pergaulan.</li>
+                    </ul>
+                </div>
+                <div style="background: rgba(255,255,255,0.6); padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #b71c1c; margin-top: 0;">3. Kualitas Hidup</h3>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li><strong>Brain Fog:</strong> Sulit fokus belajar.</li>
+                        <li><strong>Stamina Rendah:</strong> Cepat lelah beraktivitas.</li>
+                        <li><strong>Gangguan Tidur:</strong> Napas terhenti (Sleep Apnea).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">Merusak Organ Dalam</div>
+                <div class="stat-card">Menurunkan Mental & Fokus</div>
+                <div class="stat-card">Mengurangi Kualitas Hidup</div>
+            </div>
+        </div>
+
+        <div style="background: #333; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center;">
+            <strong>Fakta Sehat:</strong> Mengurangi konsumsi camilan manis dan gorengan dapat meningkatkan energi dan konsentrasi belajar kamu!
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 13px; color: #777; padding-bottom: 20px;">
+        &copy; 2026 Smart-Eater | Jaga Pola Makan, Jaga Masa Depan
+    </footer>
+</div>
+
+</body>
+</html>

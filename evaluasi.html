@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis dan Game | Smart-Eater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --bg-soft: #fff5ee;
+            --text-dark: #37474f;
+            --nav-dark: #1a1a1a;
+        }
+
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            background-color: var(--bg-soft);
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: var(--nav-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links li { margin: 5px 15px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        /* Grid Evaluasi */
+        .eval-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            justify-items: center;
+        }
+
+        /* Kartu Gambar */
+        .eval-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .eval-link:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .eval-img {
+            width: 100%;
+            height: 350px; /* Atur tinggi gambar agar seragam */
+            object-fit: cover; /* Agar gambar memenuhi area tanpa distorsi */
+        }
+
+        /* Teks Instruksi */
+        .instruction-text {
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .container { margin: 30px auto; }
+            .eval-img { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="dampak.html">Dampak</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html" class="active">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="eval-grid">
+        <a href="kuis-gizi.html" class="eval-link">
+            <img src="quiz-start.jpeg" alt="Mulai Kuis Gizi Seimbang" class="eval-img">
+        </a>
+
+        <a href="game-menu.html" class="eval-link">
+            <img src="true-false.jpeg" alt="Main Game Benar atau Salah" class="eval-img">
+        </a>
+    </div>
+
+    <p class="instruction-text">Tekan gambar untuk mulai permainan!</p>
+</div>
+
+<footer style="text-align: center; margin-top: 50px; font-size: 13px; color: #777; padding-bottom: 20px;">
+    &copy; 2026 Smart-Eater | Jaga Pola Makan, Jaga Masa Depan
+</footer>
+
+</body>
+</html>

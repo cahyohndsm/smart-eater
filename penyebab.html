@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencegahan Obesitas | Smart-Eater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0277bd;
+            --accent-green: #2e7d32;
+            --text-dark: #37474f;
+            --bg-soft: #f0f4f8;
+            --nav-dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Open Sans', sans-serif; line-height: 1.8; margin: 0; background-color: var(--bg-soft); color: var(--text-dark); }
+
+        nav { background-color: var(--nav-dark); padding: 15px 20px; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; }
+        .nav-links { list-style: none; display: flex; margin: 0; padding: 0; flex-wrap: wrap; justify-content: center; }
+        .nav-links li { margin: 5px 15px; }
+        .nav-links a { text-decoration: none; color: #ccc; font-size: 13px; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #3498db; }
+
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .content-box { background: var(--white); padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+        h1 { font-family: 'Roboto', sans-serif; color: var(--primary-blue); border-bottom: 3px solid var(--primary-blue); padding-bottom: 10px; }
+        h2 { color: var(--accent-green); margin-top: 35px; }
+
+        /* Card Layouts */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 12px; border-top: 4px solid var(--primary-blue); }
+
+        .myth-fact { background: #fff3e0; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .myth { color: #d32f2f; font-weight: bold; }
+        .fact { color: #2e7d32; font-weight: bold; }
+
+        .action-banner { background: linear-gradient(135deg, #0277bd, #00acc1); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px; }
+
+        @media (max-width: 768px) { .container { padding: 10px; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="pencegahan.html" class="active">Pencegahan</a></li>
+        <li><a href="dampak.html">Dampak</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="content-box">
+        <h1>Strategi Cerdas Mencegah Obesitas</h1>
+        <p>Mencegah obesitas bukan tentang menyiksa diri dengan lapar, melainkan membangun kebiasaan sehat yang berkelanjutan. Berikut panduan lengkapnya:</p>
+
+        <h2>1. Manfaatkan Program Makan Bergizi Gratis (MBG)</h2>
+        <p>Sekolah kini menyediakan program MBG. Ini adalah kesempatan terbaikmu untuk mendapatkan nutrisi seimbang (karbohidrat, protein, sayur, buah) tanpa harus jajan sembarangan. <strong>Tips:</strong> Hindari menambah porsi karbohidrat berlebih seperti kerupuk atau mie instan di luar menu MBG.</p>
+
+        <h2>2. Pilar Utama Pencegahan</h2>
+        <div class="info-grid">
+            <div class="card">
+                <h3>Hidrasi Optimal</h3>
+                <p>Seringkali rasa lapar sebenarnya adalah rasa haus. Minum air putih 2 liter sehari membantu metabolisme bekerja maksimal.</p>
+            </div>
+            <div class="card">
+                <h3>Tidur Cukup (8 Jam)</h3>
+                <p>Kurang tidur meningkatkan hormon lapar (*ghrelin*). Tidur cukup membantu tubuh membakar energi lebih efisien.</p>
+            </div>
+            <div class="card">
+                <h3>Mindful Eating</h3>
+                <p>Makanlah perlahan. Jangan makan sambil bermain *game* atau menonton, agar otak bisa mengenali sinyal kenyang tepat waktu.</p>
+            </div>
+            <div class="card">
+                <h3>Cek Label Kemasan</h3>
+                <p>Budayakan membaca "Informasi Nilai Gizi". Cek kandungan Gula, Garam, dan Lemak (GGL). Hindari yang terlalu tinggi.</p>
+            </div>
+        </div>
+
+        <h2>3. Konsep "Isi Piringku" (Porsi Seimbang)</h2>
+        <p>Saat makan (terutama menu MBG), gunakan panduan porsi sederhana agar nutrisi seimbang:</p>
+        <ul>
+            <li><strong>1/2 Piring:</strong> Sayuran dan Buah-buahan (Sumber serat dan vitamin).</li>
+            <li><strong>1/4 Piring:</strong> Karbohidrat (Nasi, jagung, kentang, atau ubi).</li>
+            <li><strong>1/4 Piring:</strong> Protein (Ikan, ayam, telur, tempe, atau tahu).</li>
+        </ul>
+
+        <h2>4. Lingkungan Pertemanan Positif</h2>
+        <p>Teman memiliki pengaruh besar terhadap kebiasaan makan. Cobalah ajak teman-temanmu untuk:</p>
+        <ul>
+            <li>Berkompetisi melakukan aktivitas fisik, bukan sekadar nongkrong sambil makan.</li>
+            <li>Saling mengingatkan untuk tidak jajan gorengan berlebihan.</li>
+            <li>Mendukung satu sama lain untuk mencoba menu sehat dari MBG sekolah.</li>
+        </ul>
+
+        <h2>5. Mitos vs Fakta</h2>
+        <div class="myth-fact">
+            <p><span class="myth">Mitos:</span> "Melewatkan makan pagi (sarapan) ampuh buat nurunin berat badan."</p>
+            <p><span class="fact">Fakta:</span> Melewatkan sarapan justru membuatmu balas dendam saat makan siang dan memperlambat metabolisme tubuh.</p>
+            <hr>
+            <p><span class="myth">Mitos:</span> "Semua lemak itu jahat dan bikin gemuk."</p>
+            <p><span class="fact">Fakta:</span> Tubuh butuh lemak sehat (seperti alpukat, kacang-kacangan, ikan). Yang harus dibatasi adalah lemak trans (gorengan, makanan olahan).</p>
+        </div>
+
+        <h2>6. Tetap Aktif Tanpa Harus ke Gym</h2>
+        <p>Pencegahan obesitas tidak harus mahal. Cukup lakukan:</p>
+        <ul>
+            <li>Berjalan kaki saat menuju kelas atau kantin.</li>
+            <li>Mengikuti ekskul olahraga minimal 3x seminggu.</li>
+            <li>Batasi *screen time* (waktu layar/game) maksimal 2 jam di luar jam belajar/tugas agar tidak kurang gerak.</li>
+        </ul>
+
+        <div class="action-banner">
+            <h2>Mulai dari Langkah Kecil!</h2>
+            <p>Pilih satu kebiasaan baru hari ini, misalnya: <em>"Mulai besok, saya akan minum air putih menggantikan minuman manis."</em> Konsistensi adalah kunci!</p>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 13px; color: #777; padding-bottom: 20px;">
+        &copy; 2026 Program Edukasi Gizi | Smart-Eater
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Komprehensif Pencegahan Obesitas | Smart-Eater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0277bd;
+            --accent-green: #2e7d32;
+            --accent-orange: #f57c00;
+            --danger-red: #d32f2f;
+            --text-dark: #37474f;
+            --bg-soft: #f0f4f8;
+            --nav-dark: #1a1a1a;
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            line-height: 1.8; 
+            margin: 0; 
+            background-color: var(--bg-soft);
+            color: var(--text-dark);
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: var(--nav-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 30px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-links li { margin: 5px 15px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #3498db;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        .content-box { 
+            background: var(--white); 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+
+        h1 { 
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-blue); 
+            border-bottom: 3px solid var(--primary-blue);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 { color: var(--accent-green); margin-top: 35px; border-left: 5px solid var(--accent-green); padding-left: 15px; }
+        h3 { color: var(--primary-blue); margin-top: 25px; }
+
+        /* Sesi Isi Piringku */
+        .piringku-section {
+            background: #f9fbe7;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            border: 2px solid #c5e1a5;
+            text-align: center;
+        }
+
+        .piringku-img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Step Cards */
+        .step-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #fff3e0;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--accent-orange);
+        }
+
+        .step-img img { max-width: 180px; border-radius: 10px; }
+        .step-text { flex: 2; }
+
+        /* Grid Tips Tambahan */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background: #f1f8e9;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #dcedc8;
+        }
+
+        /* List Gaya Hidup */
+        .lifestyle-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lifestyle-list li {
+            background: #e1f5fe;
+            margin-bottom: 12px;
+            padding: 12px 18px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .lifestyle-list li::before {
+            content: '✅';
+            margin-right: 12px;
+        }
+
+        .danger-box {
+            background: #ffe6e6;
+            border-left: 5px solid var(--danger-red);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .step-card { flex-direction: column; text-align: center; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="penyebab.html">Penyebab</a></li>
+        <li><a href="dampak.html">Dampak</a></li>
+        <li><a href="pencegahan.html" class="active">pencegahan</a></li>
+        <li><a href="modul.html">Modul Digital</a></li>
+        <li><a href="evaluasi.html">Kuis dan Game</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="content-box">
+        <h1>Panduan Pencegahan Obesitas: Strategi 360°</h1>
+        <p style="text-align: center; font-size: 1.1em;">Mencegah obesitas adalah investasi jangka panjang untuk kualitas hidup yang lebih baik, bertenaga, dan percaya diri.</p>
+
+        <div class="piringku-section">
+            <h2 style="border: none; padding: 0; color: #558b2f; margin-bottom: 10px;">Pilar 1: Nutrisi Seimbang (Isi Piringku)</h2>
+            <p>Bukan tentang mengurangi makan secara drastis, tapi mengatur **proporsi** piringmu.</p>
+            
+            <img src="https://www.galerimedika.com/image/catalog/pavblog/img/isi-piringku-kemenkes.jpg" alt="Panduan Isi Piringku Kemenkes" class="piringku-img">
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3 style="margin-top:0;">🥦 Sayuran (1/3 Piring)</h3>
+                    <p>Serat tinggi membuat kenyang lebih lama dan menyerap lemak jahat.</p>
+                </div>
+                <div class="grid-item">
+                    <h3 style="margin-top:0;">🍚 Karbohidrat (1/3 Piring)</h3>
+                    <p>Pilih karbohidrat kompleks seperti nasi merah, ubi, atau jagung.</p>
+                </div>
+                <div class="grid-item">
+                    <h3 style="margin-top:0;">🍗 Protein & Buah (1/3 Piring)</h3>
+                    <p>Protein membangun otot, buah memberikan vitamin alami.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>2. Batasan GGL (Gula, Garam, Lemak)</h2>
+        <div class="step-card">
+            <div class="step-text">
+                <p>Kementerian Kesehatan RI memberikan rumus <strong>G4-G1-L5</strong> per orang per hari:</p>
+                <ul style="font-weight: bold;">
+                    <li>GULA: 4 Sendok Makan (50 gram)</li>
+                    <li>GARAM: 1 Sendok Teh (5 gram)</li>
+                    <li>LEMAK: 5 Sendok Makan Minyak (67 gram)</li>
+                </ul>
+                <div class="danger-box">
+                    <strong>Waspada:</strong> Satu porsi ayam goreng tepung dan segelas boba seringkali sudah melewati batas L5 dan G4 harianmu!
+                </div>
+            </div>
+            <div class="step-img">
+                <img src="GGL.jpeg" alt="Kartun Batasi Lemak">
+            </div>
+        </div>
+
+        <h2>3. Aktivitas Fisik: Lawan Gaya Hidup Sedentari</h2>
+        <div class="step-card" style="background: #e0f2f1; border-left-color: #00897b;">
+            <div class="step-text">
+                <p>Gunakan prinsip <strong>BBTT</strong> (Baik, Benar, Terukur, Teratur):</p>
+                <ul>
+                    <li><strong>Minimal 30-60 menit</strong> setiap hari atau 150 menit seminggu.</li>
+                    <li><strong>Latihan Kekuatan:</strong> Push-up atau squat 2x seminggu untuk meningkatkan metabolisme basal.</li>
+                    <li><strong>Aktif di Sekolah:</strong> Pilih tangga dibanding lift, jalan kaki ke kantin, atau bersepeda.</li>
+                    <li><strong>Batasi Screen Time:</strong> Maksimal 2 jam duduk diam (HP/TV) di luar jam belajar.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>4. Pemulihan & Hidrasi Cerdas</h2>
+        <div class="grid-container">
+            <div class="grid-item" style="background: #e3f2fd;">
+                <h3 style="margin-top: 0;">💧 Hidrasi Air Putih</h3>
+                <p>Minum 8 gelas air putih sehari. Air putih meningkatkan metabolisme dan membantu tubuh membedakan antara "haus" dan "lapar".</p>
+            </div>
+            <div class="grid-item" style="background: #f3e5f5;">
+                <h3 style="margin-top: 0;">💤 Tidur Berkualitas</h3>
+                <p>Remaja butuh 8-9 jam tidur. Kurang tidur mengacaukan hormon <em>Leptin</em> (kenyang) dan <em>Ghrelin</em> (lapar).</p>
+            </div>
+        </div>
+
+        <h2>5. Manajemen Psikologis (Mindful Eating)</h2>
+        <div class="step-card" style="background: #fffde7; border-left-color: #fbc02d;">
+            <div class="step-text">
+                <p>Jangan makan karena bosan atau stres (<em>Emotional Eating</em>). Praktekkan cara ini:</p>
+                <ul>
+                    <li><strong>Kunyah Perlahan:</strong> Butuh 20 menit bagi otak untuk menerima sinyal kenyang.</li>
+                    <li><strong>Matikan HP saat Makan:</strong> Fokus pada rasa makanan agar tidak makan berlebihan.</li>
+                    <li><strong>Cek Label Gizi:</strong> Lihat kolom "Energi Total" dan "Lemak Total" pada kemasan snack sebelum membeli.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #0277bd, #00acc1); color: white; padding: 35px; border-radius: 15px; margin-top: 40px; text-align: center;">
+            <h2 style="color: white; border: none; padding: 0; margin-top: 0;">Jadilah Pahlawan Bagi Tubuhmu Sendiri!</h2>
+            <p style="font-size: 1.1em;">Mencegah obesitas bukan tentang menjadi kurus, tapi tentang menjadi <strong>KUAT</strong>, <strong>SEHAT</strong>, dan <strong>BERPRESTASI</strong>.</p>
+            <p><em>"Sehat itu dimulai dari apa yang ada di piringmu dan apa yang kamu lakukan setelah makan."</em></p>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 13px; color: #777; padding-bottom: 20px;">
+        &copy; 2026 Smart-Eater | Panduan Nutrisi & Gaya Hidup Remaja Indonesia
+    </footer>
+</div>
+
+</body>
+</html>
